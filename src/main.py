@@ -1,2 +1,3 @@
-def calculate() -> float:
-    pass
+
+    def multiply(a, b):
+        return a * b
