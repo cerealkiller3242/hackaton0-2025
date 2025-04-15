@@ -1,3 +1,10 @@
+
+"""
+Commit: Issue 1 – Implementar la función de suma
+"""
+def add(a, b):
+    return a + b
+  
 def calculate(expression: str):
     # Si la cadena está vacía o contiene solo espacios en blanco, se considera inválida.
     if not expression.strip():
@@ -90,17 +97,3 @@ def parse_factor(tokens, pos):
         raise ValueError(f"Invalid number: {tokens[pos]}")
     pos += 1
     return number, pos
-
-
-# Para permitir que este módulo se ejecute de forma independiente.
-if __name__ == "__main__":
-    while True:
-        try:
-            user_input = input("Ingrese una operación (o 'c' para limpiar): ")
-            # Si el usuario presiona 'c', se limpia la entrada (en este ejemplo se ignora y se continúa)
-            if user_input.strip().lower() == 'c':
-                continue
-            result = calculate(user_input)
-            print("Resultado:", result)
-        except Exception as e:
-            print("Error:", e)
