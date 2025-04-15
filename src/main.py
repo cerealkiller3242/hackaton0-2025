@@ -1,3 +1,17 @@
+def divide(a, b):
+    if b == 0:
+        raise ZeroDivisionError("division by zero")
+    return a / b
+
+def subtract(a, b):
+    return a - b
+
+"""
+Commit: Issue 1 – Implementar la función de suma
+"""
+def add(a, b):
+    return a + b
+  
 def calculate(expression: str):
     # Si la cadena está vacía o contiene solo espacios en blanco, se considera inválida.
     if not expression.strip():
@@ -91,7 +105,6 @@ def parse_factor(tokens, pos):
     pos += 1
     return number, pos
 
-
 # Para permitir que este módulo se ejecute de forma independiente.
 if __name__ == "__main__":
     while True:
@@ -104,10 +117,3 @@ if __name__ == "__main__":
             print("Resultado:", result)
         except Exception as e:
             print("Error:", e)
-
-
-
-def divide(a, b):
-    if b == 0:
-        raise ZeroDivisionError("division by zero")
-    return a / b
