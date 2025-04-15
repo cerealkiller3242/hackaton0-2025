@@ -1,2 +1,2 @@
-def calculate() -> float:
-    pass
+def subtract(a, b):
+    return a - b
