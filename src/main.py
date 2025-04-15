@@ -1,4 +1,7 @@
 
+def subtract(a, b):
+    return a - b
+
 """
 Commit: Issue 1 – Implementar la función de suma
 """
