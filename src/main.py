@@ -1,3 +1,2 @@
-def calculate(variable: str) -> float:
-    
+def calculate() -> float:
     pass
