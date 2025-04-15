@@ -104,3 +104,10 @@ if __name__ == "__main__":
             print("Resultado:", result)
         except Exception as e:
             print("Error:", e)
+
+
+
+def divide(a, b):
+    if b == 0:
+        raise ZeroDivisionError("division by zero")
+    return a / b
