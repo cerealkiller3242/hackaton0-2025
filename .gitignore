@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+.venv/
+
+# Archivos de entorno
+.env
+.env.*
+
+# Archivos del editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de prueba
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Dependencias (si usas pip freeze)
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+#Otros
+*.sqlite3
